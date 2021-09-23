@@ -1,5 +1,5 @@
 # Use powerline
-ZSH_THEME="robbyrussell"
+## ZSH_THEME="robbyrussell"
 
 PROMPT="%F{171}%n%f in %F{197}%~%f -> "
 
@@ -22,14 +22,6 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -M menuselect '^?' backward-delete-char
 
 USE_POWERLINE="true"
-# Source manjaro-zsh-configuration
-if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
-  source /usr/share/zsh/manjaro-zsh-config
-fi
-# Use manjaro zsh prompt
-if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-  source /usr/share/zsh/manjaro-zsh-prompt
-fi
 
 fpath+=$HOME/.zsh/pure
 
